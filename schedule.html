@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Paul Haimes">
+  <title>Data Science | Manolito Octaviano Jr.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,700&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/navbar-top.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <h1>Schedule</h1>
+    <p>This is the tentative schedule of discussions/activities per week.</p>
+
+    <table class="tg">
+      <thead>
+        <tr>
+          <th width="10%">Week</th>
+          <th width="40%">Topics</th>
+          <th width="30%">Readings</th>
+          <th width="60%">Assessments / Tasks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td> 1 </td>
+          <td>
+            <ul>
+              <li> Course logistics </li>
+              <li> Introduction to HCI </li>
+            </ul>
+          </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 2 </td>
+          <td> Human element in HCI </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 3 </td>
+          <td> Computer element in HCI</td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 4 </td>
+          <td> Interaction element in HCI </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <!-- <tr>
+          <td class="black"></td>
+          <td class="black" colspan="4">SQL / Python</td>
+        </tr> -->
+
+        <tr>
+          <td> 5 </td>
+          <td> Paradigms </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 6 </td>
+          <td> Research Day </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 7 </td>
+          <td> Interaction design basics </td>
+          <td> - </td>
+          <td>Release of Prog. #2 </td>
+        </tr>
+
+        <tr>
+          <td> 8 </td>
+          <td>
+            <ul>
+              <li> HCI in the software process </li>
+              <li> Design rules </li>
+            </ul>
+          </td>
+          <td> - </td>
+          <td> Release of Prog. #3</td>
+        </tr>
+
+        <tr>
+          <td class="black"></td>
+          <td class="black" colspan="4">Statistical foundation and Application</td>
+        </tr>
+
+        <tr>
+          <td> 9 </td>
+          <td> Implementation support </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 10 </td>
+          <td> Evaluation techniques </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 11 - 12 </td>
+          <td> Project development </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+
+        <tr>
+          <td> 13 - 13.5 </td>
+          <td> Project presentation </td>
+          <td> - </td>
+          <td> Presentation </td>
+        </tr>
+
+
+
+
+      </tbody>
+    </table>
+
+    <h2>References</h2>
+    <ul>
+      <li>Chinthamu, N., & Karukuri, M. (2023). <a
+          href="https://ojs.bonviewpress.com/index.php/jdsis/article/view/837/566">Data science and applications.</a>
+        <i>Journal of Data Science and
+          Intelligent Systems</i>, 1(2), 83-91.
+      </li>
+
+      <div id="footer"></div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script>
+    fetch('shared/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+
+  <script>
+    fetch('shared/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+</body>
+
+</html>

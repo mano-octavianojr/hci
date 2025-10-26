@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Paul Haimes">
+  <title>Data Science | Manolito Octaviano Jr.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,700&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/navbar-top.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <h1>Human-Computer Interaction</h1>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>Instructor: </strong> Manolito Octaviano Jr.
+      <li><strong>Synchronous: </strong> Saturday, 8am-10am | <strong>Asynchronous: </strong> Sunday </li>
+    </ul>
+
+    <hr />
+    <p>The Human-Computer Interaction (HCI) course introduces students to the foundational principles and practices of
+      designing interactive systems that effectively support human use. It explores key topics such as interaction
+      design basics, design rules, and evaluation techniques, with a strong emphasis on understanding HCI paradigms and
+      integrating them into the software development process. The course is structured around lectures, asynchronous
+      activities, and a hands-on project, allowing students to apply theoretical knowledge to practical design
+      challenges. </p>
+    <p> A major component of the course is a team-based project in which students conceptualize and design a smartphone
+      application that provides audio-based navigation assistance for visually impaired users. This project includes
+      market analysis, user interface design, and an implementation plan, culminating in a final presentation. Through
+      this project, students gain experience in accessible design, user-centered development, and real-world problem
+      solving, reinforcing the course's goal of creating inclusive and effective interactive systems. </p>
+
+    <h2>Course objectives </h2>
+    <ul>
+      <li>Understand core HCI principles and practices</li>
+      <li>Design user-centered interactive system prototypes</li>
+      <li>Apply accessibility in interface development</li>
+    </ul>
+
+    <h2>Coursework</h2>
+    <ul>
+      <li>Project (100%)</li>
+    </ul>
+    <p>More information on assessments <a href="assessments.html">here</a>.</p>
+
+    <div id="footer"></div>
+  </main>
+
+  <script>
+    fetch('shared/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    fetch('shared/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+</body>
+
+</html>

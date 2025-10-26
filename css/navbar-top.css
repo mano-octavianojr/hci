@@ -1,0 +1,14 @@
+.navbar-brand, .nav-link {
+  font-family: 'Montserrat';
+  font-weight: 700
+}
+.text-blue {
+  color: #000080 !important;
+}
+.bg-yellow {
+  background-color: #F5DEB3 !important;
+}
+
+body {
+  min-height: 75rem;
+}
